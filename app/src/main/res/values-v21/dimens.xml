@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="card_radius_5dip">5dp</dimen>
+    <dimen name="card_radius_10dip">10dp</dimen>
+    <dimen name="card_elevation_5dip">5dp</dimen>
+    <dimen name="card_elevation_10dip">10dp</dimen>
+    <dimen name="card_elevation_15dip">15dp</dimen>
+    <dimen name="setting_layout_height">50dp</dimen>
+    <dimen name="setting_layout_arrow_size">50dp</dimen>
+    <dimen name="margin_10dip">10dp</dimen>
+    <dimen name="margin_5dip">5dp</dimen>
+    <dimen name="margin_20dip">20dp</dimen>
+    <dimen name="font_size_12sp">12sp</dimen>
+    <dimen name="font_size_14sp">14sp</dimen>
+    <dimen name="font_size_16sp">16sp</dimen>
+    <dimen name="font_size_18sp">18sp</dimen>
+    <dimen name="font_size_20sp">20sp</dimen>
+    <dimen name="font_size_22sp">22sp</dimen>
+    <dimen name="font_size_custom_title_bar">18sp</dimen>
+    <dimen name="setting_pannel_height">60dp</dimen>
+
+</resources>

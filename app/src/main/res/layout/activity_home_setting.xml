@@ -1,0 +1,496 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorSettingBg"
+    tools:context="com.leanderli.dev.cardlauncherpro.HomeSettingActivity">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv_title_bar"
+        app:cardCornerRadius="0dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardElevation="@dimen/card_elevation_5dip"
+        app:cardBackgroundColor="@color/neteaseRed"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:background="?attr/selectableItemBackground"
+                android:id="@+id/rel_back"
+                android:layout_width="50dp"
+                android:layout_height="50dp">
+
+                <ImageView
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/ic_arrow_back_white_18dp"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="@string/activity_home_setting_title_bar_name"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/font_size_custom_title_bar"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <ScrollView
+        android:layout_below="@id/cv_title_bar"
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_margin="@dimen/margin_10dip"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.CardView
+                android:layout_marginTop="@dimen/margin_10dip"
+                android:id="@+id/cv_use_wallpaper"
+                app:cardCornerRadius="@dimen/card_radius_5dip"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardUseCompatPadding="true"
+                app:cardPreventCornerOverlap="true">
+
+                <RelativeLayout
+                    android:id="@+id/rel_use_wallpaper"
+                    android:background="?attr/selectableItemBackground"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/setting_pannel_height">
+
+                    <ImageView
+                        android:id="@+id/ic_select_all_grey600_18dp"
+                        android:layout_marginLeft="@dimen/margin_10dip"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/ic_select_all_grey600_18dp"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentLeft="true" />
+
+                    <TextView
+                        android:layout_marginLeft="@dimen/margin_10dip"
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@+id/ic_select_all_grey600_18dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/use_wallpaper"
+                        android:textSize="@dimen/font_size_16sp"
+                        android:layout_toRightOf="@+id/ic_select_all_grey600_18dp"/>
+
+                    <Switch
+                        android:id="@+id/sw_use_wallpaper"
+                        android:layout_marginRight="@dimen/margin_10dip"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <TextView
+                android:textColor="@color/colorSettingHint"
+                android:textSize="@dimen/font_size_14sp"
+                android:layout_marginRight="@dimen/margin_20dip"
+                android:layout_marginLeft="@dimen/margin_20dip"
+                android:text="@string/use_wallpaper_hint"
+                android:id="@+id/tv_use_wallpaper"
+                android:layout_below="@+id/cv_use_wallpaper"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <android.support.v7.widget.CardView
+                android:layout_below="@+id/tv_use_wallpaper"
+                android:layout_marginTop="@dimen/margin_10dip"
+                android:id="@+id/cv_wallpaper_mode"
+                app:cardCornerRadius="@dimen/card_radius_5dip"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardUseCompatPadding="true"
+                app:cardPreventCornerOverlap="true">
+
+                <RelativeLayout
+                    android:id="@+id/rel_wallpaper_mode"
+                    android:background="?attr/selectableItemBackground"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/setting_pannel_height">
+
+                    <ImageView
+                        android:id="@+id/ic_blur_circular_grey600_18dp"
+                        android:layout_marginLeft="@dimen/margin_10dip"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/ic_blur_circular_grey600_18dp"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentLeft="true" />
+
+                    <TextView
+                        android:layout_marginLeft="@dimen/margin_10dip"
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@+id/ic_blur_circular_grey600_18dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/wallpaper_mode"
+                        android:textSize="@dimen/font_size_16sp"
+                        android:layout_toRightOf="@+id/ic_blur_circular_grey600_18dp"/>
+
+                    <Switch
+                        android:id="@+id/sw_wallpaper_mode"
+                        android:layout_marginRight="@dimen/margin_10dip"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_below="@+id/cv_wallpaper_mode"
+                android:layout_marginTop="@dimen/margin_20dip"
+                android:id="@+id/cv_wallpaper_size"
+                app:cardCornerRadius="@dimen/card_radius_5dip"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardUseCompatPadding="true"
+                app:cardPreventCornerOverlap="true">
+
+                <RelativeLayout
+                    android:id="@+id/rel_wallpaper_size_setting"
+                    android:background="?attr/selectableItemBackground"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/setting_pannel_height">
+
+                    <ImageView
+                        android:id="@+id/ic_add_circle_outline_grey600_18dp"
+                        android:layout_marginLeft="@dimen/margin_10dip"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/ic_add_circle_outline_grey600_18dp"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentLeft="true" />
+
+                    <TextView
+                        android:layout_marginLeft="@dimen/margin_10dip"
+                        android:layout_toEndOf="@id/ic_add_circle_outline_grey600_18dp"
+                        android:textSize="@dimen/font_size_16sp"
+                        android:text="@string/main_wallpaper_size"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/ic_add_circle_outline_grey600_18dp" />
+
+                    <ImageView
+                        android:id="@+id/iv_arrow"
+                        android:layout_alignParentEnd="true"
+                        android:src="@drawable/setting_item_arrow_normal"
+                        android:layout_centerInParent="true"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <TextView
+                android:id="@+id/tv_home_setting_001"
+                android:textColor="@color/colorSettingHint"
+                android:layout_marginRight="@dimen/margin_20dip"
+                android:layout_marginLeft="@dimen/margin_20dip"
+                android:text="@string/wallpaper_size_hint"
+                android:textSize="@dimen/font_size_14sp"
+                android:layout_below="@id/cv_wallpaper_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <android.support.v7.widget.CardView
+                android:layout_below="@+id/tv_home_setting_001"
+                android:layout_marginTop="@dimen/margin_20dip"
+                android:id="@+id/cv_wallpaper_radius"
+                app:cardCornerRadius="@dimen/card_radius_5dip"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardUseCompatPadding="true"
+                app:cardPreventCornerOverlap="true">
+
+                <RelativeLayout
+                    android:id="@+id/rel_wallpaper_radius_setting"
+                    android:background="?attr/selectableItemBackground"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/setting_pannel_height">
+
+                    <SeekBar
+                        android:id="@+id/sk_wallpaper_radius"
+                        android:max="100"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <TextView
+                android:id="@+id/tv_wallpaper_radius"
+                android:textColor="@color/colorSettingHint"
+                android:layout_marginRight="@dimen/margin_20dip"
+                android:layout_marginLeft="@dimen/margin_20dip"
+                android:text="@string/wallpaper_radius_hint"
+                android:textSize="@dimen/font_size_14sp"
+                android:layout_below="@id/cv_wallpaper_radius"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_below="@id/tv_wallpaper_radius"
+                android:textColor="@color/colorSettingHint"
+                android:textSize="@dimen/font_size_16sp"
+                android:layout_marginTop="@dimen/margin_20dip"
+                android:layout_marginLeft="@dimen/margin_20dip"
+                android:text="@string/main_screen_view"
+                android:id="@+id/tv_home_setting_01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <android.support.v7.widget.CardView
+                android:layout_below="@id/tv_home_setting_01"
+                android:id="@+id/cv_wallpaper_preview"
+                app:cardCornerRadius="@dimen/card_radius_5dip"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardUseCompatPadding="true"
+                app:cardPreventCornerOverlap="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_margin="@dimen/margin_10dip"
+                        android:id="@+id/iv_wallpaper_preview"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp" />
+
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <TextView
+                android:id="@+id/tv_home_setting_02"
+                android:textColor="@color/colorSettingHint"
+                android:layout_marginRight="@dimen/margin_20dip"
+                android:layout_marginLeft="@dimen/margin_20dip"
+                android:text="@string/wallpaper_preview_hint"
+                android:textSize="@dimen/font_size_14sp"
+                android:layout_below="@id/cv_wallpaper_preview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tv_home_setting_03"
+                android:layout_marginTop="@dimen/margin_20dip"
+                android:layout_marginLeft="@dimen/margin_20dip"
+                android:layout_below="@id/tv_home_setting_02"
+                android:textSize="@dimen/font_size_16sp"
+                android:textColor="@color/colorSettingHint"
+                android:text="@string/background_color_setting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cv_background_selection"
+                android:layout_below="@id/tv_home_setting_03"
+                app:cardCornerRadius="@dimen/card_radius_5dip"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardUseCompatPadding="true"
+                app:cardPreventCornerOverlap="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:id="@+id/rel_home_color_setting_01"
+                        android:background="@drawable/layer_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp">
+
+                        <ImageView
+                            android:id="@+id/iv_backgroud_color_vibrant"
+                            android:background="#CFBF2E"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp" />
+
+                        <TextView
+                            android:id="@+id/tv_backgroud_color_vibrant"
+                            android:textColor="@color/white"
+                            android:text="@string/tv_vibrant_color"
+                            android:layout_centerInParent="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_below="@id/rel_home_color_setting_01"
+                        android:id="@+id/rel_home_color_setting_02"
+                        android:background="@drawable/layer_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp">
+
+                        <ImageView
+                            android:id="@+id/iv_backgroud_color_lightVibrant"
+                            android:background="#C7BF61"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp" />
+
+                        <TextView
+                            android:id="@+id/tv_backgroud_color_lightVibrant"
+                            android:textColor="@color/white"
+                            android:text="@string/tv_light_vibrant_color"
+                            android:layout_centerInParent="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_below="@id/rel_home_color_setting_02"
+                        android:id="@+id/rel_home_color_setting_03"
+                        android:background="@drawable/layer_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp">
+
+                        <ImageView
+                            android:id="@+id/iv_backgroud_color_darkVibrant"
+                            android:background="#305887"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp" />
+
+                        <TextView
+                            android:id="@+id/tv_backgroud_color_darkVibrant"
+                            android:textColor="@color/white"
+                            android:text="@string/tv_dark_vibrant_color"
+                            android:layout_centerInParent="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_below="@id/rel_home_color_setting_03"
+                        android:id="@+id/rel_home_color_setting_04"
+                        android:background="@drawable/layer_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp">
+
+                        <ImageView
+                            android:id="@+id/iv_backgroud_color_muted"
+                            android:background="#879759"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp" />
+
+                        <TextView
+                            android:id="@+id/tv_backgroud_color_muted"
+                            android:textColor="@color/white"
+                            android:text="@string/tv_muted_color"
+                            android:layout_centerInParent="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_below="@id/rel_home_color_setting_04"
+                        android:id="@+id/rel_home_color_setting_05"
+                        android:background="@drawable/layer_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp">
+
+                        <ImageView
+                            android:id="@+id/iv_backgroud_color_lightMuted"
+                            android:background="#B7C7BF"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp" />
+
+                        <TextView
+                            android:id="@+id/tv_backgroud_color_lightMuted"
+                            android:textColor="@color/white"
+                            android:text="@string/tv_light_muted_color"
+                            android:layout_centerInParent="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_below="@id/rel_home_color_setting_05"
+                        android:id="@+id/rel_home_color_setting_06"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp">
+
+                        <ImageView
+                            android:id="@+id/iv_backgroud_color_darkMuted"
+                            android:background="#374F5F"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp" />
+
+                        <TextView
+                            android:id="@+id/tv_backgroud_color_darkMuted"
+                            android:textColor="@color/white"
+                            android:text="@string/tv_dark_muted_color"
+                            android:layout_centerInParent="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <TextView
+                android:layout_marginRight="@dimen/margin_20dip"
+                android:id="@+id/tv_home_setting_04"
+                android:textColor="@color/colorSettingHint"
+                android:text="@string/background_color_setting_hint"
+                android:layout_marginLeft="@dimen/margin_20dip"
+                android:layout_below="@id/cv_background_selection"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                android:layout_below="@id/tv_home_setting_04"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

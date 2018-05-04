@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context="com.leanderli.dev.cardlauncherpro.HomeActivity">
+
+    <com.leanderli.dev.cardlauncherpro.view.PullDownScrollView
+        android:id="@+id/home_scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:id="@+id/rel_app_home_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?attr/selectableItemBackgroundBorderless">
+
+            <android.support.v7.widget.CardView
+                android:stateListAnimator="@animator/touch_raise"
+                android:id="@+id/cv_main"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                app:cardCornerRadius="0dp"
+                app:cardPreventCornerOverlap="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/iv_main"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                    <TextView
+                        android:visibility="invisible"
+                        android:id="@+id/tv_eng"
+                        android:textSize="30sp"
+                        android:text="Eng 2.0"
+                        android:layout_marginTop="50dp"
+                        android:layout_marginLeft="@dimen/margin_20dip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:visibility="invisible"
+                        android:id="@+id/tv_eng_1"
+                        android:text="CardLauncherPro."
+                        android:layout_marginLeft="@dimen/margin_20dip"
+                        android:layout_below="@id/tv_eng"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+
+                    <TextView
+                        android:visibility="invisible"
+                        android:text="O ever youthful, O ever weeping."
+                        android:layout_marginLeft="@dimen/margin_20dip"
+                        android:layout_below="@id/tv_eng_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <RelativeLayout
+                android:id="@+id/rel_widget"
+                android:layout_below="@+id/cv_main"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <android.support.v7.widget.CardView
+                    android:visibility="gone"
+                    android:stateListAnimator="@animator/touch_raise"
+                    app:cardBackgroundColor="#00ffffff"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardPreventCornerOverlap="true"
+                    app:cardUseCompatPadding="true"
+                    app:cardCornerRadius="@dimen/card_radius_5dip"
+                    android:id="@+id/cv_widget"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="55dp">
+
+                            <ImageView
+                                android:id="@+id/iv_weather"
+                                android:layout_marginLeft="@dimen/margin_10dip"
+                                android:layout_centerVertical="true"
+                                android:src="@drawable/mysun2"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp" />
+
+                            <TextView
+                                android:id="@+id/tv_degree"
+                                android:textStyle="bold"
+                                android:textSize="@dimen/font_size_16sp"
+                                android:text="20°"
+                                android:layout_marginLeft="@dimen/margin_10dip"
+                                android:layout_centerVertical="true"
+                                android:layout_toRightOf="@+id/iv_weather"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:id="@+id/tv_type"
+                                android:textSize="@dimen/font_size_16sp"
+                                android:layout_marginLeft="@dimen/margin_10dip"
+                                android:text="晴"
+                                android:layout_centerVertical="true"
+                                android:layout_toRightOf="@id/tv_degree"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+
+                            <TextView
+                                android:id="@+id/tv_city_name"
+                                android:textStyle="bold"
+                                android:textSize="@dimen/font_size_16sp"
+                                android:layout_marginRight="@dimen/margin_10dip"
+                                android:layout_centerVertical="true"
+                                android:text="浦东新区"
+                                android:layout_alignParentEnd="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true" />
+
+                            <ImageView
+                                android:layout_marginRight="@dimen/margin_5dip"
+                                android:src="@drawable/myrefresh"
+                                android:layout_centerVertical="true"
+                                android:layout_toLeftOf="@+id/tv_city_name"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp" />
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                </android.support.v7.widget.CardView>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rel_fav_app"
+                android:layout_below="@id/rel_widget"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <!--<android.support.v7.widget.CardView-->
+                    <!--app:cardUseCompatPadding="true"-->
+                    <!--app:cardCornerRadius="@dimen/card_radius_5dip"-->
+                    <!--app:cardBackgroundColor="@color/colorHomeGroupListBg"-->
+                    <!--android:id="@+id/cv_fav_apps"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--app:cardPreventCornerOverlap="true">-->
+
+                    <RelativeLayout
+                        android:id="@+id/rel_home_apps"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/rv_fav_apps"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:descendantFocusability="afterDescendants" />
+
+                    </RelativeLayout>
+
+                <!--</android.support.v7.widget.CardView>-->
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </com.leanderli.dev.cardlauncherpro.view.PullDownScrollView>
+
+</RelativeLayout>

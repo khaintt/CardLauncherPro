@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:id="@+id/rel_popup_menu_container"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rel_popup_menu_app_setting"
+            android:background="@drawable/layer_list"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <ImageView
+                android:id="@+id/ic_home_black_18dp"
+                android:layout_margin="@dimen/margin_10dip"
+                android:src="@drawable/ic_home_black_18dp"
+                android:layout_centerVertical="true"
+                android:layout_width="@dimen/margin_20dip"
+                android:layout_height="@dimen/margin_20dip" />
+
+            <TextView
+                android:textSize="@dimen/font_size_16sp"
+                android:textColor="@color/black"
+                android:layout_toEndOf="@+id/ic_home_black_18dp"
+                android:layout_centerVertical="true"
+                android:text="桌面设置"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rel_popup_menu_system_setting"
+            android:background="@drawable/layer_list"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <ImageView
+                android:id="@+id/ic_settings_black_18dp"
+                android:layout_margin="@dimen/margin_10dip"
+                android:src="@drawable/ic_settings_black_18dp"
+                android:layout_centerVertical="true"
+                android:layout_width="@dimen/margin_20dip"
+                android:layout_height="@dimen/margin_20dip" />
+
+            <TextView
+                android:textSize="@dimen/font_size_16sp"
+                android:textColor="@color/colorLittleBlack"
+                android:layout_toEndOf="@+id/ic_settings_black_18dp"
+                android:layout_centerVertical="true"
+                android:text="系统设置"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

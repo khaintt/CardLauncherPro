@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">卡片|Card|カード|карта|카드 Ooooooooops!</string>
+    <string name="activity_settings_title_bar_name">设置</string>
+    <string name="home_wallpaper_background_setting">主屏幕墙纸、背景</string>
+    <string name="home_icon_display_setting">图标、显示</string>
+    <string name="home_fav_app_setting">主屏幕常用应用设置</string>
+    <string name="app_list_setting">应用列表设置</string>
+    <string name="news_page_setting">信息流设置</string>
+    <string name="activity_home_setting_title_bar_name">主屏幕美化</string>
+    <string name="select_wallpaper">选择墙纸</string>
+    <string name="main_wallpaper_size">选择墙纸大小</string>
+    <string name="wallpaper_size_hint">点击来选择你最喜爱的墙纸大小</string>
+    <string name="main_screen_view">主屏幕墙纸</string>
+    <string name="wallpaper_preview_hint">点击上方面板来选择墙纸，墙纸选择后将在面板上生成预览图</string>
+    <string name="background_color_setting">选择背景色彩</string>
+    <string name="tv_vibrant_color">活力</string>
+    <string name="tv_light_vibrant_color">活力 亮色</string>
+    <string name="tv_dark_vibrant_color">活力 暗色</string>
+    <string name="tv_muted_color">柔和</string>
+    <string name="tv_light_muted_color">柔和 亮色</string>
+    <string name="tv_dark_muted_color">柔和 暗色</string>
+    <string name="background_color_setting_hint">点击上方单个面板来选择最适合你视觉效果的桌面背景色彩，同时自动设置最适合该色彩的文字颜色，默认已经设置了其中一种</string>
+    <string name="wallpaper_size_setting_hint">默认大小大概为屏幕的三分之一高度，中等大概为二分之一高度，更大大概为三分之二高度，全屏即所见</string>
+    <string name="wallpaper_size_default">默认</string>
+    <string name="wallpaper_size_medium">中等</string>
+    <string name="wallpaper_size_exlarge">更大</string>
+    <string name="wallpaper_size_fullscreen">全屏</string>
+    <string name="activity_wallpaper_size_setting">墙纸大小</string>
+    <string name="use_wallpaper">墙纸作为背景</string>
+    <string name="use_wallpaper_hint">打开开关来使用主屏幕墙纸作为桌面背景，或者使用墙纸色彩</string>
+    <string name="wallpaper_radius_hint">拖动滑块来设置主屏幕墙纸高斯模糊程度</string>
+    <string name="app_group_setting">应用分组、常用应用</string>
+    <string name="app_group_all_groups">所有分组</string>
+    <string name="wallpaper_mode">使用全屏幕墙纸</string>
+</resources>

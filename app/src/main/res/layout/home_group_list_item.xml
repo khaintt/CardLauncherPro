@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.CardView
+        app:cardBackgroundColor="@color/colorSettingBg"
+        android:layout_marginRight="@dimen/margin_5dip"
+        android:layout_marginLeft="@dimen/margin_5dip"
+        android:id="@+id/cv_group_apps_view"
+        app:cardCornerRadius="@dimen/card_radius_5dip"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_marginTop="@dimen/margin_10dip"
+                android:layout_marginLeft="@dimen/margin_20dip"
+                android:textColor="@color/black"
+                android:id="@+id/tv_group_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:text="TextView"
+                android:textSize="@dimen/font_size_18sp" />
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_margin="@dimen/margin_5dip"
+                android:id="@+id/rv_apps"
+                android:layout_below="@+id/tv_group_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>
